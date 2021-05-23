@@ -5,7 +5,7 @@
 set -ueo pipefail
 
 BUILD_DIR="_build_snapshot"
-THEME_NAME="MateriaSnapshot"
+THEME_NAME="TokyoSnapshot"
 
 if [[ ! -d "$BUILD_DIR" ]]; then
   meson "$BUILD_DIR" -Dtheme_name="$THEME_NAME"

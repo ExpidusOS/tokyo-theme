@@ -199,7 +199,7 @@ for FILEPATH in "${PATHLIST[@]}"; do
       -e 's/#ebebeb/%HDR_BG2%/g' \
       -e 's/#1d1d1d/%HDR_FG%/g' \
       -e 's/#565656/%INACTIVE_FG%/g' \
-      -e 's/Materia/%OUTPUT_THEME_NAME%/g' \
+      -e 's/Tokyo/%OUTPUT_THEME_NAME%/g' \
       {} \; ;
   else
     find "$FILEPATH" -type f -not -name '_color-palette.scss' -exec sed -i'' \
@@ -213,7 +213,7 @@ for FILEPATH in "${PATHLIST[@]}"; do
       -e 's/#1e1e1e/%HDR_BG2%/g' \
       -e 's/#e4e4e4/%HDR_FG%/g' \
       -e 's/#a7a7a7/%INACTIVE_FG%/g' \
-      -e 's/Materia/%OUTPUT_THEME_NAME%/g' \
+      -e 's/Tokyo/%OUTPUT_THEME_NAME%/g' \
       {} \; ;
   fi
 done
@@ -302,7 +302,7 @@ FORCE_INKSCAPE="$OPTION_FORCE_INKSCAPE" ./render-assets.sh gtk
 
 meson _build -Dprefix="$tempdir" -Dcolors="$COLOR_VARIANT" -Dsizes="$SIZE_VARIANT"
 meson install -C _build
-GENERATED_PATH="$tempdir/share/themes/Materia$COLOR_SUFFIX$SIZE_SUFFIX"
+GENERATED_PATH="$tempdir/share/themes/Tokyo$COLOR_SUFFIX$SIZE_SUFFIX"
 if [[ -d "$DEST_PATH" ]]; then
 	rm -r "$DEST_PATH"
 elif [[ ! -d "$(dirname "$DEST_PATH")" ]]; then

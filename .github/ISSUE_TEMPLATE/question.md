@@ -13,7 +13,7 @@ Please provide the following information *as much as possible* if your question 
 To check your GTK3 version, run: `gtk-launch --version`
 -->
 
-- Materia version: 
+- Tokyo version: 
 - GTK3 version: 
 - Distribution (and version): 
 - Desktop environment (and version): 

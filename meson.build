@@ -1,5 +1,5 @@
 project(
-  'materia-theme',
+  'tokyo-theme',
   version: '20210322',
   license: 'GPLv2+',
   meson_version: '>= 0.47.0',
@@ -59,7 +59,6 @@ foreach theme: themes
   install_data(
     [
       'COPYING',
-      'INSTALL_GDM_THEME.md',
     ],
     install_dir: theme['dir'],
   )
